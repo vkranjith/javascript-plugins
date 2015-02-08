@@ -1,0 +1,7 @@
+@charset utf-8;
+/* jquery form-validation style */
+.validation-errorBG{background-color:rgb(255,240,240) !important;}
+.validation-errorColor{color:rgb(200,0,0) !important;}
+.validation-errorBorder{border:1px solid rgb(200,0,0) !important;}
+.validation-errorSignContainer{color: rgb(200,0,0) !important; display: inline; margin-left: -15px; font-size:100%; line-height:100%;}
+.validation-message-hidden {display: none;}
