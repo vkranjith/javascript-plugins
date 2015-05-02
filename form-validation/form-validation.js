@@ -43,7 +43,7 @@
 			alphanumPattern: /^[\w\s\.\-,\n]*$/i,
 			urlPattern: /^(http[s]?:\/\/)?([a-z0-9]{2,}\.)?([a-z0-9-\.]{2,})*([\.][a-z]{2,})(\/[a-z]{2,})*([\w\?\&\=\%\#\+-])*(\.[a-z]{2,}|\/|[a-z0-9]*)$/igm,
 			realtime: true, /* whether or not to show error message on validation error */
-			onChnage: true, /* whether or not validate on value change */
+			onChange: true, /* whether or not validate on value change */
 			onFailure: function() {},/* triggered on validation error */
 			onProgress: function() {},/* triggered on ajax call */
 			onSuccess: function() {},/* triggered on ajax call success */
@@ -218,7 +218,7 @@
 		function fieldValidationStart(targetField) {
 			validationMsg = {};
 			targetFieldError = false;
-			if(options.onChnage === true) {
+			if(options.onChange === true) {
 				var validationResult = checkElements(targetField);
 				if(validationResult === false && options.realtime === true) 
 					options.onFailure(validationMsg);
