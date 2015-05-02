@@ -1,7 +1,6 @@
 // jquery modal
 (function ($){
 	'use strict';
-	jQuery.noConflict();
 	
 	var jquery_modal_tempContent = '';
 	$.fn.extend({
